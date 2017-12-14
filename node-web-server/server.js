@@ -49,6 +49,14 @@ app.get('/about', function(req, res) {
     });
 });
 
+app.get('/projects', function(req, res) {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects',
+        name: 'Jacob',
+        welcomeMessage: 'Welcomeeee to my projects'
+    });
+});
+
 app.listen(3000, function() {
     console.log('Listening on port 3000');
 });
